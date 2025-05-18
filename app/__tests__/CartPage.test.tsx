@@ -6,7 +6,7 @@ import { useCart } from '../context/CartContext';
 jest.mock('next/image', () => ({
   __esModule: true,
   default: (props) => {
-    const { fill, ...rest } = props;
+    const { ...rest } = props;
     return <img {...rest} />;
   },
 }));

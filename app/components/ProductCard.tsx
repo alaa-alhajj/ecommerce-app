@@ -1,15 +1,17 @@
 import { motion } from "framer-motion";
 import { FaCartPlus, FaTrashAlt } from "react-icons/fa";
 
+type Product = {
+  id: number;
+  title: string;
+  image: string;
+  price: number;
+};
+
 type Props = {
-  product: {
-    id: number;
-    title: string;
-    image: string;
-    price: number;
-  };
+  product: Product;
   isInCart: boolean;
-  onAddToCart: (product: any) => void;
+  onAddToCart: (product: Product) => void;
   onRemoveFromCart: (productId: number) => void;
 };
 
