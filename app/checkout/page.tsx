@@ -8,7 +8,7 @@ import { useCart } from "../context/CartContext";
 
 export default function CheckoutPage() {
     const router = useRouter();
-    const { cart, clearCart } = useCart();
+    const { clearCart } = useCart();
 
     const [formData, setFormData] = useState({
         fullName: "",

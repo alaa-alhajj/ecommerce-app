@@ -62,7 +62,6 @@ export default function CartPage() {
                     <Image
                       src={product.image}
                       alt={product.title}
-                      fill
                       className="object-contain"
                     />
                   </div>
