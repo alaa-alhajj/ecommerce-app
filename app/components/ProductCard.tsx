@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaCartPlus, FaTrashAlt } from "react-icons/fa";
+import Image from "next/image";
 
 type Product = {
   id: number;
@@ -29,7 +30,7 @@ export default function ProductCard({
       className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col"
     >
       <div className="h-36 w-full flex items-center justify-center overflow-hidden mb-3">
-        <img
+        <Image
           src={product.image}
           alt={product.title}
           className="max-h-full object-contain mb-4"
