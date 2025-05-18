@@ -2,12 +2,13 @@ import React from 'react';
 import { render, screen, fireEvent, act } from '@testing-library/react';
 import CartPage from '../cart/page';
 import { useCart } from '../context/CartContext';
+import Image from "next/image";
 
 jest.mock('next/image', () => ({
   __esModule: true,
   default: (props) => {
     const { ...rest } = props;
-    return <img {...rest} />;
+    return <Image {...rest} />;
   },
 }));
 

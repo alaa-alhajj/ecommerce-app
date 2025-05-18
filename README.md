@@ -19,19 +19,19 @@ A modern, responsive e-commerce web application built with Next.js and Tailwind 
 ## Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/ecommerce-app.git
-   ```
+```bash
+  git clone https://github.com/yourusername/ecommerce-app.git
+```
    
 2. Navigate to the project directory:
  ```bash
   cd ecommerce-app
-   ```
+```
    
 3. Install dependencies:
  ```bash
   npm install
-   ```
+```
    
 4. Run the development server:
 ```bash
@@ -44,7 +44,7 @@ Open http://localhost:3000 in your browser.
 To run unit and component tests using Jest and React Testing Library:
 ```bash
   npm test
-   ```
+```
 ---
 
 ## 👩‍💻 Author
