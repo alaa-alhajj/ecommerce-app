@@ -20,7 +20,7 @@ A modern, responsive e-commerce web application built with Next.js and Tailwind 
 
 1. Clone the repository:
 ```bash
-  git clone https://github.com/yourusername/ecommerce-app.git
+  git clone https://github.com/alaa-alhajj/ecommerce-app
 ```
    
 2. Navigate to the project directory:
