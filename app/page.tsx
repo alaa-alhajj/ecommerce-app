@@ -6,7 +6,15 @@ import { useCart } from "./context/CartContext";
 import { FaExclamationTriangle } from "react-icons/fa";
 
 export default function HomePage() {
-  const [products, setProducts] = useState([]);
+
+  type Product = {
+    id: number;
+    title: string;
+    description: string;
+    image: string;
+    price: number;
+  };
+  const [products, setProducts] = useState<Product[]>([]);
   const [visibleCount, setVisibleCount] = useState(6);
   const { cart, addToCart, removeFromCart } = useCart();
   const [loading, setLoading] = useState(true);
@@ -42,7 +50,7 @@ export default function HomePage() {
     setVisibleCount((prev) => prev + 6);
   };
 
-  const isProductInCart = (id) => cart.some((item) => item.id === id);
+  const isProductInCart = (id: number) => cart.some((item) => item.id === id);
 
   if (loading) {
     return (
